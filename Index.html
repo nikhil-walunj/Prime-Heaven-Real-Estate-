@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PrimeHeaven</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="Homestyle.css">
+        <style>
+          .card {
+           transition: transform 0.3s, box-shadow 0.3s; 
+           }
+
+         .card:hover {
+          transform: translatey(-20px); 
+          box-shadow: 6px 6px 6px rgba(26, 163, 213, 0.837); 
+          }
+          @media (max-width:500px){
+            .btn-group{
+                display: none;
+            }
+          }
+          @media (max-width: 800px) {
+            .d-flex.mt-3 {
+                display: none;
+            }
+
+            .d-flex.mt-3 .form-control {
+                display: none; 
+            }
+
+            .d-flex.mt-3 .btn {
+                display: none; 
+              }
+         }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+          <!--Navbar & Buttons-->
+          <div class="row">
+            <nav class="navbar navbar-dark bg-dark fixed-top custom-navbar">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="assets/Images/PrimeHeaven.png" alt="Website-Logo"></a>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-info" type="submit">Search</button>
+                    </form>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <a href="Login.html">
+                        <button type="button" class="btn btn-success">Login</button></a>
+                      <a href="Register.html">
+                        <button type="button" class="btn btn-danger">Register Here</button></a>
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PrimeHeaven</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="AboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Login.html">Login Here</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Register.html">Register Here</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Property Types
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="Residental.html">Residential</a></li>
+                            <li><a class="dropdown-item" href="IndependentHome.html">Independent House</a></li>
+                            <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                            <li><a class="dropdown-item" href="Plot.html">Plots</a></li>
+                            <li><a class="dropdown-item" href="PGRoom.html">PG Rooms</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Premium</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+          </div>
+          <!--Side scrollpy & caurosal-->
+          <div class="row">
+            <div class="col-md-2">
+              <nav id="navbar-example2" class="navbar bg-info px-2 mb-1 rounded-1">
+                <a class="navbar-brand" href="#"><b>Upcoming Big Project</b></a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Property Details</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#scrollspyHeading1">First</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading2">Second</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                    </ul>
+              </nav>
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-info-subtle p-3 rounded-2" tabindex="0">
+                <h4 id="scrollspyHeading1">
+                  <img src="assets/Images/BHAGWATI BUILDERS.avif" width="190px" height="150px"  alt="">BHAGWATI BUILDERS</h4>
+                <p>Location: Thane</p><hr>
+                <h4 id="scrollspyHeading2">
+                  <img src="assets/Images/ushakiran.avif" width="190px" height="150px" alt="">USHAKIRAN GROUP</h4>
+                <p>Location: Vashi</p>
+                <h4 id="scrollspyHeading3">
+                  <img src="assets/Images/VB Builders.avif" width="190px" height="150px" alt="">VB CONSTRUCTION</h4>
+                <p>Location: Dadar</p>
+                <h4 id="scrollspyHeading4">
+                  <img src="assets/Images/Mahavir.avif" width="190px" height="150px" alt="">MAHAVIR ENCLAVE</h4>
+                <p>Location: Worli </p>
+                <h4 id="scrollspyHeading5">
+                  <img src="assets/Images/Regency.avif" width="190px" height="150px" alt="">MIGHTY REGENCY </h4>
+                <p>Location: Bandra</p>
+              </div>
+
+            </div>
+            <div class="col-md-10">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/Images/Caurosal2-1.webp" width="250px" height="500px" class="d-block w-100" alt="...">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Images/Caurosal1-1.png" width="250px" height="500px"  class="d-block w-100" alt="...">
+                  
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/Images/Caurosal3-1.jpg" width="250px" height="500px" class="d-block w-100" alt="...">
+                  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+          </div>
+          
+          
+          <!--row bar-->
+          <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#tab-residential">Residential</a>
+            <a class="et-hero-tab" href="#tab-IH">Independent Home</a>
+            <a class="et-hero-tab" href="#tab-COM">Commercial</a>
+            <a class="et-hero-tab" href="#tab-Plots">Plots</a>
+            <a class="et-hero-tab" href="#tab-PG">PG Rooms</a>
+            <span class="et-hero-tab-slider"></span>
+          </div>
+      
+        <!-- Main Top Prop -->
+        <main class="et-main">
+          <section class="et-slide" id="tab-residential">
+            <h1 style="margin-bottom:40px ;">Top Residential Property</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopResidential1.html">
+                  <img src="assets/Images/Residential/TopRes1.png" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Spacious 3 BHK Apartment</h5>
+                    <p>Location: Malabar Hill, Mumbai</p>
+                    <p class="card-text">This spacious 3-bedroom apartment offers luxurious living in the heart of Mumbai City.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopResidential2.html">
+                  <img src="assets/Images/Residential/TopRes2.png" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Luxury 4 BHK Modern Apartment</h5>
+                    <p>Location: Juhu Beach, Mumbai</p>
+                    <p class="card-text">
+                      This luxurious 4-bedroom modern apartment is located in one of Mumbai's most sought-after neighborhoods, offering serene beachside living with all modern amenities.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopResidential3.html">
+                  <img src="assets/Images/Residential/TopRes3.png" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Elegant 2 BHK Apartment</h5>
+                    <p>Location: Bandra West, Mumbai</p>
+                    <p class="card-text">This stylish 2-bedroom apartment offers a perfect blend of comfort and luxury in the heart of Bandra West.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="et-slide" id="tab-IH">
+            <h1 style="margin-bottom:60px ;">Top Independent Home Property</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopIH1.html">
+                  <img src="assets/Images/TopIH-1.jpg" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Charming Independent Home</h5>
+                    <p>Location: Near Alibag, Maharashtra</p>
+                    <p class="card-text">This beautiful 4-bedroom independent home is nestled near Alibag, offering a serene getaway from the city.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopIH2.html">
+                  <img src="assets/Images/TopIH-2.jpg" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Luxurious Villa in Lonavala</h5>
+                    <P>Location: Lonavala, Maharashtra</P>
+                    <p class="card-text">Surrounded by nature, this 5-bedroom villa offers breathtaking views of Lonavala’s hills.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopIH3.html">
+                  <img src="assets/Images/TopIH-3.jpg" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Scenic Bungalow in Khandala</h5>
+                    <P>Location: Khandala, Maharashtra</P>
+                    <p class="card-text">This 4-bedroom bungalow in Khandala offers a peaceful environment with spectacular mountain views.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+           
+          <section class="et-slide" id="tab-COM">
+            <h1 style="margin-bottom:60px ;">Top Commarcial Property</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopCOM1.html">
+                  <img src="assets/Images/TopCOM-3avif.avif" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Premium Office Space</h5>
+                    <P>Location: Nariman Point, Mumbai</P>
+                    <p class="card-text">This premium office space offers state-of-the-art facilities in the heart of Mumbai's business district.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopCOM2.html">
+                  <img src="assets/Images/TopCOM-2.jpg" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Exclusive Office Space</h5>
+                    <P>Location: Vashi, Navi Mumbai</P>
+                    <p class="card-text">This exclusive office space in Vashi, Navi Mumbai, offers a well-connected location, ideal for growing businesses.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopCOM3.html">
+                  <img src="assets/Images/TopCOM-1.jpg" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Prime Office Space</h5>
+                    <P>Location: Bandra-Kurla Complex (BKC), Mumbai</P>
+                    <p class="card-text">The office offers modern interiors, ample natural light, and proximity to key commercial centers.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+           
+          <section class="et-slide" id="tab-Plots">
+            <h1 style="margin-bottom:40px ;">Top Plots Property</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopPlot1.html">
+                  <img src="assets/Images/TopPlot-1.avif" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Prime Residential Plot</h5>
+                    <P>Location: Lonavala, Maharashtra</P>
+                    <p class="card-text">This prime 2000 sq. ft. residential plot is located in the serene hill station of Lonavala, offering breathtaking views and a tranquil environment.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopPlot2.html">
+                  <img src="assets/Images/TopPlot-2.avif" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Prime Commercial Plot</h5>
+                    <P>Location: Hinjewadi, Pune</P>
+                    <p class="card-text">This 5000 sq. ft. commercial plot is located near Hinjewadi IT Park area of Pune.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopPlot3.html">
+                  <img src="assets/Images/TopPlot-3.jpg" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Agricultural Plot</h5>
+                    <p>Location: Nashik, Maharashtra</p>
+                    <p class="card-text">The plot is ideal for both small-scale farming and large-scale agricultural projects.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+          <section class="et-slide" id="tab-PG">
+            <h1 style="margin-bottom:30px ;">Top PG Room Property</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopPG1.html">
+                  <img src="assets/Images/TopPG-1.avif" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Cozy 2 Sharing PG Room</h5>
+                    <p>Location: Ghodbunder Road, Thane</p>
+                    <p class="card-text">Offers all modern amenities with close proximity to transportation, shopping centers, and entertainment. Ideal for students or working professionals.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopPG2.html">
+                  <img src="assets/Images/TopPG-2-3.jpg" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Comfortable 4 Sharing PG Room</h5>
+                    <p>Location: Teen Hath Naka, Thane</p>
+                    <p class="card-text">Located near Thane Railway Station, it offers easy access to public transport and local amenities.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <a href="TopPG3.html">
+                  <img src="assets/Images/TopPG-3.avif" class="card-img-top" height="300px" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Modern 1 Sharing PG Room</h5>
+                    <p>Location: Bandra East, Mumbai</p>
+                    <p class="card-text">This modern private PG room is perfect for working professionals seeking a luxurious living space in Bandra.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white pt-4 mt-2">
+          <div class="container-fluid">
+             <div class="row">
+              <!-- Website Logo and About Us -->
+              <div class="col-md-3">
+                <img src="assets/Images/PrimeHeavenVB.png" alt="Website-Logo" width="250" height="85px" class="mb-2">
+                  <h5 class="mt-4">About Us</h5>
+                  <p>PrimeHeaven is your trusted real estate <br>platform for premium properties.<br>"Yaha Hai Apka Dream".</p>
+              </div>
+  
+              <!-- Quick Links -->
+              <div class="col-md-3">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="Index.html" class="text-white">Home</a></li>
+                      <li><a href="" class="text-white">About Us</a></li>
+                      <li><a href="Residental.html" class="text-white">Residential</a></li>
+                      <li><a href="IndependentHome.html" class="text-white">IndependentHome</a></li>
+                      <li><a href="Commercial.html" class="text-white">Commercial</a></li>
+                      <li><a href="Plot.html" class="text-white">Plots</a></li>
+                      <li><a href="PGRoom.html" class="text-white">PG Rooms</a></li>
+                      <li><a href="" class="text-white">Contact Us</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Contact Us -->
+              <div class="col-md-3">
+                  <h5 class="mb-3">Contact Us</h5>
+                  <p><i class="bi bi-whatsapp"></i> +9326221656</p>
+                  <p><i class="bi bi-telephone-fill"></i> +123-456-7890</p>
+                  <p><i class="bi bi-envelope-fill"></i> contact@primeheaven.com</p>
+                  <p><i class="bi bi-clock"></i> Operating Hours: Mon-Fri, 9 AM - 6 PM</p>
+              </div>
+  
+              <!-- Follow Us (Social Media Icons) -->
+              <div class="col-md-3">
+                  <h5 class="">Follow Us</h5>
+                  <a href="#" class="text-white me-3">
+                      <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                  </a>
+                  <a href="#" class="text-white me-3">
+                      <i class="bi bi-twitter" style="font-size: 24px;"></i>
+                  </a>
+                  <a href="#" class="text-white me-3">
+                      <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                  </a>
+                  <a href="#" class="text-white me-3">
+                      <i class="bi bi-linkedin" style="font-size: 24px;"></i>
+                  </a>
+                  <a href="#" class="text-white me-3">
+                      <i class="bi bi-youtube" style="font-size: 24px;"></i>
+                  </a>
+                  <a href="#" class="text-white me-3">
+                      <i class="bi bi-pinterest" style="font-size: 24px;"></i>
+                  </a>
+                  
+                  <h5 class="mt-5">Our Location</h5>
+                  <p>PrimeHeaven Real Estate, MindSpace,<br>Airoli East - Navi Mumbai, <br> Maharashtra 400708 </p>
+              </div>
+              </div>
+  
+              <hr class="border-top border-secondary">
+  
+          <!-- Footer Bottom -->
+          <div class="row">
+              <div class="col-md-12 text-center">
+                  <p>&copy; 2024 PrimeHeaven. All rights reserved.</p>
+              </div>
+          </div>
+          </div>
+        </footer>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+</html>

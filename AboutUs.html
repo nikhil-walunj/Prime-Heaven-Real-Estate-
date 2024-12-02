@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PrimeHeaven</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Homestyle.css">
+    <style>
+        @media (max-width:500px){
+            .btn-group{
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-dark bg-dark fixed-top custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="assets/Images/PrimeHeaven.png" alt="Website-Logo"></a>
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="Login.html">
+                          <button type="button" class="btn btn-success">Login</button></a>
+                        <a href="Register.html">
+                          <button type="button" class="btn btn-danger">Register Here</button></a>
+                      </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PrimeHeaven</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="AboutUs.html">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Login.html">Login Here</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Register.html">Register Here</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Property Types
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="Residental.html">Residential</a></li>
+                              <li><a class="dropdown-item" href="IndependentHome.html">Independent House</a></li>
+                              <li><a class="dropdown-item" href="Commercial.html">Commarcial</a></li>
+                              <li><a class="dropdown-item" href="Plot.html">Plots</a></li>
+                              <li><a class="dropdown-item" href="PGRoom.html">PG Rooms</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Premium</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+        </div>
+
+    <!-- About Us Section -->
+    <section class="about-us py-5 mt-5">
+        <div class="container">
+            <div class="row mt-5">
+                <!-- Introduction -->
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bold mb-4">About PrimeHeaven</h1>
+                    <p class="lead text-white">PrimeHeaven is your trusted partner in finding luxurious homes and premium real estate across top locations. With a wide array of residential and commercial properties, we help you discover your perfect space effortlessly.</p>
+                    <p>Established to redefine the real estate market, our mission is to bridge the gap between buyers and sellers, ensuring transparency, trust, and convenience in every transaction.</p>
+                </div>
+                <!-- Video Section -->
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <video controls autoplay muted loop>
+                            <source src="assets/Video/PrimeHeaven24.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values Section -->
+    <section class="values py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="bi bi-hand-thumbs-up" style="font-size: 3rem; color: #007bff;"></i>
+                    <h3 class="mt-3">Integrity</h3>
+                    <p>We value transparency and honesty in every transaction, ensuring trust and reliability for our clients.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-people" style="font-size: 3rem; color: #007bff;"></i>
+                    <h3 class="mt-3">Customer First</h3>
+                    <p>Your satisfaction is our priority, and we are dedicated to providing personalized services that exceed your expectations.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-lightbulb" style="font-size: 3rem; color: #007bff;"></i>
+                    <h3 class="mt-3">Innovation</h3>
+                    <p>We leverage cutting-edge technology to simplify the property buying and selling process, making it more accessible and efficient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission-vision Section -->
+    <section class="mission py-5 bg-info-subtle">
+        <div class="container text-center">
+            <div class="row">
+            <div class="col-md-6">
+            <h2 class="fw-bold">Our Mission</h2>
+            <p class="text">To simplify real estate transactions by providing a trustworthy and transparent platform for premium property buying, selling, and renting.</p>
+            </div>
+            <div class="col-md-6">
+            <h3 class="fw-bold">Our Vision</h3>
+            <p class="text">To be the leading real estate platform in the country, where trust and excellence go hand in hand, and where every property seeker can find their perfect match in real estate.</p>
+            </div>   
+            </div>    
+        </div>
+    </section>
+    
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white pt-4 mt-2">
+            <div class="container-fluid">
+               <div class="row">
+                <!-- Website Logo and About Us -->
+                <div class="col-md-3">
+                    <img src="assets/Images/PrimeHeavenVB.png" alt="Website-Logo" width="250" height="85px" class="mb-2">
+                    <h5 class="mt-4">About Us</h5>
+                    <p>PrimeHeaven is your trusted real estate <br>platform for premium properties.<br>"Yaha Hai Apka Dream".</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Index.html" class="text-white">Home</a></li>
+                        <li><a href="" class="text-white">About Us</a></li>
+                        <li><a href="Residental.html" class="text-white">Residential</a></li>
+                        <li><a href="IndependentHome.html" class="text-white">IndependentHome</a></li>
+                        <li><a href="Commercial.html" class="text-white">Commercial</a></li>
+                        <li><a href="Plot.html" class="text-white">Plots</a></li>
+                        <li><a href="PGRoom.html" class="text-white">PG Rooms</a></li>
+                        <li><a href="" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Us -->
+                <div class="col-md-3">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p><i class="bi bi-whatsapp"></i> +9326221656</p>
+                    <p><i class="bi bi-telephone-fill"></i> +123-456-7890</p>
+                    <p><i class="bi bi-envelope-fill"></i> contact@primeheaven.com</p>
+                    <p><i class="bi bi-clock"></i> Operating Hours: Mon-Fri, 9 AM - 6 PM</p>
+                </div>
+    
+                <!-- Follow Us (Social Media Icons) -->
+                <div class="col-md-3">
+                    <h5 class="">Follow Us</h5>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-twitter" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-linkedin" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-youtube" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-pinterest" style="font-size: 24px;"></i>
+                    </a>
+                    
+                    <h5 class="mt-5">Our Location</h5>
+                    <p>PrimeHeaven Real Estate, MindSpace,<br>Airoli East - Navi Mumbai, <br> Maharashtra 400708 </p>
+                </div>
+                </div>
+    
+                <hr class="border-top border-secondary">
+    
+            <!-- Footer Bottom -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 PrimeHeaven. All rights reserved.</p>
+                </div>
+            </div>
+            </div>
+          </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

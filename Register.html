@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeHeaven</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="Homestyle.css">
+    <style>
+        body {
+            background-image: url("assets/Images/Skyline.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .container {
+            margin-top: 75px;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(7, 82, 95);
+        }
+
+        .register-box {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            padding-bottom: 1px;
+            padding-top: 18px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            background-color: #83b5be;
+            border-radius: 1px;
+        }
+
+        h1 {
+            font-family: 'Tangerine', serif;
+            font-size: 68px;
+            text-shadow: 4px 4px 4px #aaa;
+        }
+
+        h3 {
+            color: rgb(16, 87, 100);
+        }
+
+        .text {
+            margin-right: 50px;
+        }
+
+        .text img {
+            width: 100%;
+            max-width: 500px;
+            padding-bottom: 30px;
+            margin-left: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .text {
+                margin-right: 0;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .register-box {
+                margin-top: 20px;
+            }
+
+            .text img {
+                margin-left: 0;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            h1 {
+                font-size: 48px;
+            }
+
+            .text img {
+                max-width: 400px;
+            }
+
+            .container {
+                margin-top: 80px;
+            }
+
+            .register-box {
+                max-width: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- Navbar & offcanvas -->
+        <div class="row">
+            <nav class="navbar navbar-dark bg-dark fixed-top custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/Images/PrimeHeaven.png" alt="Website-Logo" class="img-fluid"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PrimeHeaven</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AboutUs.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false"> Property Types </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="Residental.html">Residental</a></li>
+                                        <li><a class="dropdown-item" href="IndependentHome.html">Independent House</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                                        <li><a class="dropdown-item" href="Plot.html">Plots</a></li>
+                                        <li><a class="dropdown-item" href="PGRoom.html">PG Rooms</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="text col-md-6">
+                <img src="assets/Images/PrimeHeavenVB.png" alt="Website Logo">
+                <h1>Welcome To PrimeHeaven!!</h1>
+                <strong class="text-white ms-3">PrimeHaven is your trusted real estate platform, offering premium
+                    properties and expert guidance to help you find your perfect home.</strong><br>
+                <strong class="text-white ms-3">"Yaha Hai Apka Dream" – where your dream property becomes reality.</strong>
+            </div>
+
+            <div class="register-box">
+                <h3 class="text-center fw-bold mb-4">Registration Form</h3>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="username" class="form-label fw-bold">Enter Name:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="email" class="form-label fw-bold">Email Address:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter a valid email address"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="password" class="form-label fw-bold">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                required>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="password" class="form-label fw-bold">Confirm Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="gender" class="form-label me-4 fw-bold">Gender:</label>
+                            <input type="radio" id="male" name="gender" value="male" required checked>
+                            <label for="male">Male</label>
+                            <div class="text-center me-3">
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="inputState" class="form-label fw-bold">User Type</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Builder</option>
+                                <option>Owner</option>
+                                <option>Broker</option>
+                                <option>Flatmate</option>
+                                <option>None</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputAddress" class="form-label fw-bold">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Enter address"
+                                required>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="inputCity" class="form-label fw-bold">City</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Enter city" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputState" class="form-label fw-bold">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>Maharashtra</option>
+                                <option>Goa</option>
+                                <option>Uttar Pradesh</option>
+                                <option>Gujarat</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="inputZip" class="form-label fw-bold">Pincode</label>
+                            <input type="text" class="form-control" id="inputZip" placeholder="Enter pincode" required>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="inputContact" class="form-label fw-bold">Contact Number</label>
+                            <input type="number" class="form-control" id="inputContact" placeholder="Enter Number" required>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="terms">I agree to the <a href="#">terms and
+                                    conditions</a></label>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                    <div class="text-center mt-3">
+                        <span>Already a User?</span> <a href="Login.html">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independent Home Properties - PrimeHeaven</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Homestyle.css">
+    <style>
+        @media (max-width:500px){
+            .btn-group{
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-dark bg-dark fixed-top custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="assets/Images/PrimeHeaven.png" alt="Website-Logo"></a>
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="Login.html">
+                          <button type="button" class="btn btn-success">Login</button></a>
+                        <a href="Register.html">
+                          <button type="button" class="btn btn-danger">Register Here</button></a>
+                      </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PrimeHeaven</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="AboutUs.html">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Login.html">Login Here</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Register.html">Register Here</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Property Types
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="Residental.html">Residential</a></li>
+                              <li><a class="dropdown-item" href="IndependentHome.html">Independent House</a></li>
+                              <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                              <li><a class="dropdown-item" href="Plot.html">Plots</a></li>
+                              <li><a class="dropdown-item" href="PGRoom.html">PG Rooms</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Premium</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+        </div>
+
+        <!-- Carosal Section -->
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/Images/IndependentHomePageHeader.jpg" height="450px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="fs-1 fw-bold">Explore Top Independent Home Properties</p>
+                      <p class="fs-5 text-white fw-bold">Discover spacious and private independent homes that cater to your lifestyle needs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!--class="bg-info text-white p-5 text-center mt-5">
+            <h1>Explore Top Residental Properties</h1>
+            <p>Find your dream home with our curated residential listings.</p>-->
+        
+        </div>
+        <!--Main Content-->
+        <div class="row">
+            <!-- Page Title -->
+            <h1 class="text-center text-bg-dark pt-3 pb-3 mb-4">Independent Home Properties</h1>
+        
+            <!-- Price Filter -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <label for="priceFilter" class="form-label text-white">Filter by Price</label>
+                <select id="priceFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="0-1000">Up to &#8377 50L</option>
+                    <option value="1000-2000">&#8377 50L - &#8377 1.00cr</option>
+                    <option value="2000-5000">&#8377 1.00cr - &#8377 1.50cr</option>
+                    <option value="2000-5000">&#8377 1.50cr - &#8377 2.00cr</option>
+                    <option value="2000-5000">&#8377 2.00cr - &#8377 3.00cr</option>
+                    <option value="5000-100000">&#8377 3.00cr+</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="priceFilter" class="form-label text-white">Filter by Location</label>
+                <select id="priceFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Thane</option>
+                    <option value="">Pune</option>
+                    <option value="">Nashik</option>
+                    <option value="">Raigad</option>
+                    <option value="">Navi Mumbai</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="priceFilter" class="form-label text-white">Filter by BHK</label>
+                <select id="priceFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="0-1000">1 RK</option>
+                    <option value="1000-2000">1 BHK</option>
+                    <option value="2000-5000">2 BHK</option>
+                    <option value="1000-2000">3 BHK</option>
+                    <option value="2000-5000">4 BHK</option>
+                    <option value="5000-100000">5BHK+</option>
+                </select>
+            </div>
+        </div>
+
+            <!-- Tab navigation for "For Sale" and "For Rent" -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="sale-tab" data-bs-toggle="tab" data-bs-target="#for-sale" type="button" role="tab" aria-controls="for-sale" aria-selected="true">For Sale</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rent-tab" data-bs-toggle="tab" data-bs-target="#for-rent" type="button" role="tab" aria-controls="for-rent" aria-selected="false">For Rent</button>
+                </li>
+            </ul>
+    
+            <!-- Tab content -->
+            <div class="tab-content mt-4" id="myTabContent">
+                <!-- For Sale Section -->
+                <div class="tab-pane fade show active" id="for-sale" role="tabpanel" aria-labelledby="sale-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-1.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sunset Villa - Modern Independent Home</h5>
+                                    <p class="card-text"><strong>Location:</strong> Alibaug, Maharashtra</p>
+                                    <p class="card-text">A beautiful 4BHK villa with sea views, private pool, and large garden.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 5.75 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 4 (Carpet Area: 3500 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +912-345-6789</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-2.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mountain Breeze - Spacious Hillside Cottage</h5>
+                                    <p class="card-text"><strong>Location:</strong> Lonavala, Maharashtra</p>
+                                    <p class="card-text">A 5BHK independent home with a private garden and scenic mountain views.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 8.20 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 5 (Carpet Area: 4000 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +913-987-6543</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-3.webp" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Green Acres - Luxury Estate in the Suburbs</h5>
+                                    <p class="card-text"><strong>Location:</strong> Panvel, Maharashtra</p>
+                                    <p class="card-text">A 6BHK estate with vast green lawns, a pool, and private parking for 5 cars.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 12.50 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 6 (Carpet Area: 5000 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +914-123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-0">
+                    
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-4.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lakeview Manor - Serene Independent Home</h5>
+                                    <p class="card-text"><strong>Location:</strong> Pune, Maharashtra</p>
+                                    <p class="card-text">A luxurious 5BHK manor with private lake access, expansive gardens, and modern amenities.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 10.00 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 5 (Carpet Area: 4500 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +915-678-1234</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-5.avif" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sunrise Residency - Contemporary Independent Home</h5>
+                                    <p class="card-text"><strong>Location:</strong> Nashik, Maharashtra</p>
+                                    <p class="card-text">A stylish 3BHK home with modern architecture, smart home features, and a spacious balcony.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 3.80 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 3 (Carpet Area: 2000 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +916-789-0123</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-6.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Urban Oasis - Premium Independent Home</h5>
+                                    <p class="card-text"><strong>Location:</strong> Navi Mumbai, Maharashtra</p>
+                                    <p class="card-text">A 4BHK premium home with landscaped gardens, private garage, and high-end finishes.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 7.50 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 4 (Carpet Area: 3200 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +917-890-1234</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-0">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-7.webp" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Palm Grove Estate - Exclusive Independent Home</h5>
+                                    <p class="card-text"><strong>Location:</strong> Thane, Maharashtra</p>
+                                    <p class="card-text">A grand 6BHK estate surrounded by palm trees, featuring a home theater and gym.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 15.00 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 6 (Carpet Area: 6000 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +918-901-2345</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-8.avif" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cedar Heights - Elegant Independent Home</h5>
+                                    <p class="card-text"><strong>Location:</strong> Nagpur, Maharashtra</p>
+                                    <p class="card-text">An elegant 4BHK home with spacious interiors, modern kitchen, and private garden.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 6.25 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 4 (Carpet Area: 2800 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +919-012-3456</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHS-9.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modern Urban Mansion</h5>
+                                    <p class="card-text"><strong>Location:</strong> Pune, Maharashtra</p>
+                                    <p class="card-text">A luxurious 6BHK mansion with cutting-edge design, private elevator, and rooftop terrace.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 11.45 cr onwards</p>
+                                    <p class="card-text"><strong>BHK:</strong> 6 (Carpet Area: 5500 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +912-456-7890</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+    
+                <!-- For Rent Section -->
+                <div class="tab-pane fade" id="for-rent" role="tabpanel" aria-labelledby="rent-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-1.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seaside Cottage for Rent</h5>
+                                    <p class="card-text"><strong>Location:</strong> Dapoli, Maharashtra</p>
+                                    <p class="card-text">A cozy 3BHK seaside cottage with private beach access.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 1,00,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 3 (Carpet Area: 1500 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +919-876-5432</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Property Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-2.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hilltop Villa for Rent</h5>
+                                    <p class="card-text"><strong>Location:</strong> Khandala, Maharashtra</p>
+                                    <p class="card-text">A 4BHK hilltop villa with panoramic views and large living spaces.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 2,50,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 4 (Carpet Area: 3000 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +918-765-4321</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Property Card 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-3.avif" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Farmhouse Retreat for Rent</h5>
+                                    <p class="card-text"><strong>Location:</strong> Karjat, Maharashtra</p>
+                                    <p class="card-text">A beautiful 5BHK farmhouse with lush greenery and a private pool.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 3,50,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 5 (Carpet Area: 4500 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +917-654-3210</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-0">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-4.avif" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Country Side Villa for Rent</h5>
+                                    <p class="card-text"><strong>Location:</strong> Shirdi, Maharashtra</p>
+                                    <p class="card-text">A spacious 4BHK villa in the countryside with large gardens and a pool.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 1,50,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 4 (Carpet Area: 2500 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +919-234-5678</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-5.avif" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">City Lights villa for Rent</h5>
+                                    <p class="card-text"><strong>Location:</strong> Thane, Maharashtra</p>
+                                    <p class="card-text">A modern 3BHK vila with city views, gym and parking.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 80,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 3 (Carpet Area: 1800 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +918-345-6789</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-6.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modern Loft for Rent</h5>
+                                    <p class="card-text"><strong>Location:</strong> Mumbai, Maharashtra</p>
+                                    <p class="card-text">A stylish loft apartment with open spaces, high ceilings, and contemporary design.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 1,20,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> Studio (Carpet Area: 900 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +919-678-9012</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-0">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-7.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Luxury Villa with Private Garden</h5>
+                                    <p class="card-text"><strong>Location:</strong> Lonavala, Maharashtra</p>
+                                    <p class="card-text">A 4BHK luxury villa surrounded by lush greenery, featuring a private garden and swimming pool.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 2,50,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 4 (Carpet Area: 3600 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +919-876-5432</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-8.webp" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secluded Hilltop Villa</h5>
+                                    <p class="card-text"><strong>Location:</strong> Mahabaleshwar, Maharashtra</p>
+                                    <p class="card-text">A serene 5BHK villa nestled on a hilltop, offering panoramic views of the Western Ghats.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 2,00,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 5 (Carpet Area: 4500 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +913-654-7891</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/IHR-9.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modern Penthouse with City View</h5>
+                                    <p class="card-text"><strong>Location:</strong> South Mumbai, Maharashtra</p>
+                                    <p class="card-text">A chic 3BHK penthouse offering stunning city views, located in the heart of Mumbai's upscale neighborhood.</p>
+                                    <p class="card-text"><strong>Rent:</strong> &#8377 3,75,000/month</p>
+                                    <p class="card-text"><strong>BHK:</strong> 3 (Carpet Area: 3000 sq.ft)</p>
+                                    <p class="card-text"><strong>Contact:</strong> +912-345-6789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white pt-4 mt-2">
+            <div class="container-fluid">
+               <div class="row">
+                <!-- Website Logo and About Us -->
+                <div class="col-md-3">
+                    <img src="assets/Images/PrimeHeavenVB.png" alt="Website-Logo" width="250" height="85px" class="mb-2">
+                    <h5 class="mt-4">About Us</h5>
+                    <p>PrimeHeaven is your trusted real estate <br>platform for premium properties.<br>"Yaha Hai Apka Dream".</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Index.html" class="text-white">Home</a></li>
+                        <li><a href="" class="text-white">About Us</a></li>
+                        <li><a href="Residental.html" class="text-white">Residential</a></li>
+                        <li><a href="IndependentHome.html" class="text-white">IndependentHome</a></li>
+                        <li><a href="Commercial.html" class="text-white">Commercial</a></li>
+                        <li><a href="Plot.html" class="text-white">Plots</a></li>
+                        <li><a href="PGRoom.html" class="text-white">PG Rooms</a></li>
+                        <li><a href="" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Us -->
+                <div class="col-md-3">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p><i class="bi bi-whatsapp"></i> +9326221656</p>
+                    <p><i class="bi bi-telephone-fill"></i> +123-456-7890</p>
+                    <p><i class="bi bi-envelope-fill"></i> contact@primeheaven.com</p>
+                    <p><i class="bi bi-clock"></i> Operating Hours: Mon-Fri, 9 AM - 6 PM</p>
+                </div>
+    
+                <!-- Follow Us (Social Media Icons) -->
+                <div class="col-md-3">
+                    <h5 class="">Follow Us</h5>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-twitter" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-linkedin" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-youtube" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="#" class="text-white me-3">
+                        <i class="bi bi-pinterest" style="font-size: 24px;"></i>
+                    </a>
+                    
+                    <h5 class="mt-5">Our Location</h5>
+                    <p>PrimeHeaven Real Estate, MindSpace,<br>Airoli East - Navi Mumbai, <br> Maharashtra 400708 </p>
+                </div>
+                </div>
+    
+                <hr class="border-top border-secondary">
+    
+            <!-- Footer Bottom -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 PrimeHeaven. All rights reserved.</p>
+                </div>
+            </div>
+            </div>
+          </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

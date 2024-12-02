@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plots Properties - PrimeHeaven</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Homestyle.css">
+    <style>
+        @media (max-width:500px){
+            .btn-group{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <div class="row">
+            <nav class="navbar navbar-dark bg-dark fixed-top custom-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="assets/Images/PrimeHeaven.png" alt="Website-Logo"></a>
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="Login.html">
+                          <button type="button" class="btn btn-success">Login</button></a>
+                        <a href="Register.html">
+                          <button type="button" class="btn btn-danger">Register Here</button></a>
+                      </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">PrimeHeaven</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="AboutUs.html">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Login.html">Login Here</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Register.html">Register Here</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Property Types
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="Residental.html">Residential</a></li>
+                              <li><a class="dropdown-item" href="IndependentHome.html">Independent House</a></li>
+                              <li><a class="dropdown-item" href="Commercial.html">Commercial</a></li>
+                              <li><a class="dropdown-item" href="Plot.html">Plots</a></li>
+                              <li><a class="dropdown-item" href="PGRoom.html">PG Rooms</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Premium</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+        </div>
+
+        <!-- Carosal Section -->
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/Images/PlotC.png" height="450px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p class="fs-1 fw-bold">Explore Top Plot Properties</p>
+                      <p class="fs-5 text-white fw-bold">Find the perfect plot to build your dream project with our curated land listings.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!--class="bg-info text-white p-5 text-center mt-5">
+            <h1>Explore Top Residental Properties</h1>
+            <p>Find your dream home with our curated residential listings.</p>-->
+        
+        </div>
+        <!--Main Content-->
+        <div class="row">
+            <!-- Page Title -->
+            <h1 class="text-center text-bg-dark pt-3 pb-3 mb-4">Plot / Land Property</h1>
+        
+            <!-- Price Filter -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <label for="priceFilter" class="form-label text-white">Filter by Price</label>
+                <select id="priceFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="0-1000">Up to &#8377 2.00cr</option>
+                    <option value="1000-2000">&#8377 2.00cr - &#8377 10.00cr</option>
+                    <option value="2000-5000">&#8377 10.00cr - &#8377 20.00cr</option>
+                    <option value="2000-5000">&#8377 20.00cr - &#8377 30.00cr</option>
+                    <option value="2000-5000">&#8377 30.00cr - &#8377 40.00cr</option>
+                    <option value="5000-100000">&#8377 40.00cr+</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="priceFilter" class="form-label text-white">Filter by Location</label>
+                <select id="priceFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Thane</option>
+                    <option value="">Pune</option>
+                    <option value="">Nashik</option>
+                    <option value="">Raigad</option>
+                    <option value="">Navi Mumbai</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="priceFilter" class="form-label text-white">Filter by Size</label>
+                <select id="priceFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="0-1000">5,000 - 10,000 sq-ft</option>
+                    <option value="1000-2000">10,000 - 20,000 sq-ft</option>
+                    <option value="2000-5000">20,000 - 30,000 sq-ft</option>
+                    <option value="1000-2000">30,000 - 40,000 sq-ft</option>
+                    <option value="2000-5000">40,000 - 50,000 sq-ft</option>
+                    <option value="5000-100000">50,000+ sq-ft</option>
+                </select>
+            </div>
+        </div>
+
+            <!-- Tab navigation for "For Sale"-->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="sale-tab" data-bs-toggle="tab" data-bs-target="#for-sale" type="button" role="tab" aria-controls="for-sale" aria-selected="true">For Sale</button>
+                </li>
+            </ul>
+    
+            <!-- Tab content -->
+            <div class="tab-content mt-4" id="myTabContent">
+                <!-- For Sale Section -->
+                <div class="tab-pane fade show active" id="for-sale" role="tabpanel" aria-labelledby="sale-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/Plot-1.jpeg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Residential Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> Panvel, Navi Mumbai</p>
+                                    <p class="card-text">Ideal for residential development with scenic views.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 3.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 5,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +123-456-7890</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/plot-2.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Commercial Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> Andheri East, Mumbai</p>
+                                    <p class="card-text">A prime location for commercial or retail development.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 12.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 10,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +987-654-3210</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/Plot-3.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Industrial Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> MIDC, Pune</p>
+                                    <p class="card-text">Perfect for industrial development with good road connectivity.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 25.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 30,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +321-654-9870</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-0">
+                    
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/PLOT-4.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Agricultural Land</h5>
+                                    <p class="card-text"><strong>Location:</strong> Palghar, Maharashtra</p>
+                                    <p class="card-text">Fertile land suitable for farming or agri-business.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 4.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 50,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +224-987-1543</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/PLOT-5.png" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Beachfront Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> Alibaug, Maharashtra</p>
+                                    <p class="card-text">A beautiful beachfront property perfect for a resort.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 20.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 15,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +444-987-6543</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/PLOT-6.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hilltop Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> Lonavala, Maharashtra</p>
+                                    <p class="card-text">A serene hilltop location with panoramic views, perfect for villas.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 10.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 8,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +555-123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-0">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/PLOT-7.jpg" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lakefront Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> Powai, Mumbai</p>
+                                    <p class="card-text">A premium lakefront property with development potential.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 30.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 20,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +333-987-6543</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 2 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/PLOT-8.webp" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Forest Retreat Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> Matheran, Maharashtra</p>
+                                    <p class="card-text">A peaceful retreat surrounded by forest, ideal for eco-tourism.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 7.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 6,000 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +222-123-6543</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 3 -->
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="assets/Images/PLOT-9.webp" height="300px" class="card-img-top" alt="Property Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Suburban Plot</h5>
+                                    <p class="card-text"><strong>Location:</strong> Virar, Mumbai</p>
+                                    <p class="card-text">A well-located suburban plot perfect for residential construction.</p>
+                                    <p class="card-text"><strong>Price:</strong> &#8377 5.00 cr</p>
+                                    <p class="card-text"><strong>Size:</strong> 4,500 sq.ft</p>
+                                    <p class="card-text"><strong>Contact:</strong> +111-987-1234</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="bg-dark text-white pt-4 mt-2">
+        <div class="container-fluid">
+           <div class="row">
+            <!-- Website Logo and About Us -->
+            <div class="col-md-3">
+                <img src="assets/Images/PrimeHeavenVB.png" alt="Website-Logo" width="250" height="85px" class="mb-2">
+                <h5 class="mt-4">About Us</h5>
+                <p>PrimeHeaven is your trusted real estate <br>platform for premium properties.<br>"Yaha Hai Apka Dream".</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="Index.html" class="text-white">Home</a></li>
+                    <li><a href="" class="text-white">About Us</a></li>
+                    <li><a href="Residental.html" class="text-white">Residential</a></li>
+                    <li><a href="IndependentHome.html" class="text-white">IndependentHome</a></li>
+                    <li><a href="Commercial.html" class="text-white">Commercial</a></li>
+                    <li><a href="Plot.html" class="text-white">Plots</a></li>
+                    <li><a href="PGRoom.html" class="text-white">PG Rooms</a></li>
+                    <li><a href="" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="col-md-3">
+                <h5 class="mb-3">Contact Us</h5>
+                <p><i class="bi bi-whatsapp"></i> +9326221656</p>
+                <p><i class="bi bi-telephone-fill"></i> +123-456-7890</p>
+                <p><i class="bi bi-envelope-fill"></i> contact@primeheaven.com</p>
+                <p><i class="bi bi-clock"></i> Operating Hours: Mon-Fri, 9 AM - 6 PM</p>
+            </div>
+
+            <!-- Follow Us (Social Media Icons) -->
+            <div class="col-md-3">
+                <h5 class="">Follow Us</h5>
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-facebook" style="font-size: 24px;"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-twitter" style="font-size: 24px;"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-instagram" style="font-size: 24px;"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-linkedin" style="font-size: 24px;"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-youtube" style="font-size: 24px;"></i>
+                </a>
+                <a href="#" class="text-white me-3">
+                    <i class="bi bi-pinterest" style="font-size: 24px;"></i>
+                </a>
+                
+                <h5 class="mt-5">Our Location</h5>
+                <p>PrimeHeaven Real Estate, MindSpace,<br>Airoli East - Navi Mumbai, <br> Maharashtra 400708 </p>
+            </div>
+            </div>
+
+            <hr class="border-top border-secondary">
+
+        <!-- Footer Bottom -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 PrimeHeaven. All rights reserved.</p>
+            </div>
+        </div>
+        </div>
+        </footer>
+
+  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+body{
+    background-color:  rgb(42, 150, 154);
+}
+.custom-navbar {
+    height: 110px; /* Set the desired height */
+    padding-bottom: 20px;
+}
+
+.navbar-brand img {
+                  
+    width: 200px; 
+    height: 80px;
+}
+
+
+.navbar-toggler {
+    margin-top: 10px; /* Adjust the button alignment */
+}
+.btn-group{
+    margin-top: 15px;
+}
+
+#carouselExampleCaptions, #navbar-example2{
+    margin-top: 110px;
+}
+
+.scrollspy-example {
+    
+    height: 410px;  /* Set a specific height for scrolling */
+    overflow-y: auto;
+    position: relative;
+    border: 2px solid;
+}
+
+a {
+	text-decoration: none;
+}
+
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    border: 3px solid rgb(11, 25, 152);
+    position: relative;
+    background: #eee;
+		text-align: center;
+		padding: 0 2em;
+    h1 {
+        font-size: 1rem;
+        margin: 0;
+        letter-spacing: 0.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        opacity: 0.6;
+    }
+}
+
+.et-hero-tabs-container {
+    margin-bottom: 3.8%;
+    border: 2px solid rgb(11, 25, 152);
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Changed to 100% for better responsiveness */
+    max-width: 98.4%; /* Added max-width for larger screens */
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+}
+
+.et-hero-tab {
+    display: flex;
+    border: 0.5px solid;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    padding: 10px; /* Added padding for better touch targets */
+}
+
+.et-hero-tab:hover {
+    color: white;
+    background: rgba(102, 177, 241, 0.8);
+    transition: all 0.5s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .et-hero-tab {
+        font-size: 0.9rem; /* Smaller font size on smaller screens */
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .et-hero-tabs-container {
+        flex-direction: row; 
+        height: auto; /* Remove fixed height */
+    }
+
+    .et-hero-tab {
+        font-size: 0.8rem;
+        padding: 7px; /* Adjust padding for smaller screens */
+    }
+
+    .custom-navbar {
+        padding: 10px; /* Smaller padding for mobile */
+    }
+    
+    .scrollspy-example {
+        padding: 1em;
+        height: auto; /* Auto height for smaller screens*/ 
+    }
+
+    .et-slide {
+        height: auto; /* Make slide height auto for smaller devices */
+        padding: 1em; /* Reduce padding */
+    }
+
+}
+@media (max-width: 576px) {
+    .et-hero-tab {
+        
+        font-size: 0.7rem;
+        padding: 6px; /* Adjust padding for extra small screens */
+    }
+}
+
+/* Media Query for very large screens */
+@media (min-width: 1200px) {
+    .et-hero-tab {
+        font-size: 1.2rem; /* Larger font size on very large screens */
+    }
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+/*@media (min-width: 800px) {
+	.et-hero-tabs,
+	.et-slide {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+	}
+	.et-hero-tab {
+		font-size: 1rem;
+	}
+}*/
+
+
